@@ -14,11 +14,11 @@ require('load-grunt-tasks')(grunt);
         }
     },
   uglify: {
-    my_target: {
-      files: {
-        'dist/js/output.min.js': ['bower_components/jquery/dist/jquery.js', 'bower_components/jquery.countdown/dist/jquery.countdown.js']
-      }
-    }
+    	build:{
+			src:'dist/js/countdown.js',
+			dest:'dist/js/countdown.min.js'
+			}
+  
   },
 watch: {
   css: {
